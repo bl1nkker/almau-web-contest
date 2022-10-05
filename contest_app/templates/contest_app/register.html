@@ -1,20 +1,49 @@
 {% extends 'contest_app/index.html' %}
 {% block content %}
 <div class='content'>
-    <h1>Welcome to the</h1>
-    <div class="circle">
-      <img
-        class="logo"
-        src="https://media1.giphy.com/media/bj09BK2BzLLQk/200w.gif?cid=82a1493bup74ordbfg507aimyh3oua1mk9297hoyb4kxisr8&rid=200w.gif&ct=g"
-        alt=""
-      />
-      <div class="text">
-        <p>Web - Developers - Contest -</p>
+    <h1>Register now!</h1>
+    <form method='POST' action='/register/' class="row g-3 rounded p-3 border border-3 border-white register-form">
+      {% csrf_token %}
+
+      <h5>About team</h5>
+      <div class="col-md-10">
+        <label for="inputEmail4" class="form-label">Team Name</label>
+        <input name='team_name' type="text" class="form-control" id="inputEmail4" placeholder="please, something non-forbidden">
       </div>
-    </div>
-    <h4>...the most broken contest in the world</h4>
-    <a href='/about' class="btn btn-warning text-white start-button">
-        What are you waiting for?
-      </a>
+      <div class="col-md-2">
+        <label for="inputState" class="form-label">Course</label>
+        <select name='team_course' id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>1 course</option>
+          <option>2 course</option>
+        </select>
+      </div>
+      <h5>Team Leader</h5>
+      <div class="col-md-6">
+        <label for="inputLeadFullname" class="form-label">Fullname</label>
+        <input name='first_fullname' type="text" class="form-control" id="inputLeadFullname" placeholder="Sam Dumpling">
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress2" class="form-label">Phone Number</label>
+        <input name='first_phone' type="text" class="form-control" id="inputAddress2" placeholder="+?">
+      </div>
+      <h5>Team Co-founder</h5>
+      <div class="col-md-6">
+        <label for="inputLeadFullname" class="form-label">Fullname</label>
+        <input name='second_fullname' type="text" class="form-control" id="inputLeadFullname" placeholder="Tereza Mayo">
+      </div>
+      <div class="col-md-6">
+        <label for="inputAddress2" class="form-label">Phone Number</label>
+        <input name='second_phone' type="text" class="form-control" id="inputAddress2" placeholder="+?">
+      </div>
+    
+    
+    
+      
+      <p class='text-info'>{{message}}</p>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">LESSGOO!</button>
+      </div>
+    </form>
 </div>
 {% endblock %}
