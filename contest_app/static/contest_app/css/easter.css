@@ -1,0 +1,30 @@
+.easter-kok{
+    position: absolute;
+    animation: easterMovement 10s ease-in-out;
+    left: -40%;
+    bottom: -40%;
+}
+
+.easter-kok img{
+    width: 48px;
+    height: 48px;
+}
+
+@keyframes easterMovement {
+    0%{
+        left: -40%;
+        bottom: -40%;
+    }
+    80%{
+        left: 0%;
+        bottom: 0%;
+    }
+    90%{
+        left: 0%;
+        bottom: 0%;
+    }
+    100%{
+        left: -40%;
+        bottom: -40%;
+    }
+}

@@ -1,10 +1,16 @@
-body {
+body{
+  overflow: hidden;
   background: rgb(241, 122, 5);
   background: radial-gradient(
     circle,
     rgba(241, 122, 5, 1) 4%,
     rgba(232, 92, 2, 1) 100%
   );
+  z-index: -2;
+}
+
+.content {
+  
   font-family: monospace;
   display: flex;
   flex-direction: column;
@@ -13,10 +19,16 @@ body {
   justify-content: space-around;
   color: white;
   overflow: hidden;
+  z-index:1;
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  
+}
+h5{
+  text-align: center;
 }
 
 .circle{
@@ -59,6 +71,7 @@ h1{
 
 .decor{
   position: absolute;
+  z-index: -1;
 }
 
 .decor-1{
@@ -114,7 +127,7 @@ h1{
 }
 
 
-.start-button{
+.next-button{
   position: absolute;
   bottom: 5vh;
   right: 5vw;
@@ -134,5 +147,62 @@ h1{
   }
   100%{
     right: 5vw;
+  }
+}
+
+.cards-container{
+  margin: 3rem 0;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info-1{
+  position: absolute;
+  left: 10%;
+  top:0;
+  background-color: #E13856;
+  animation: cardInfoMovement1 1s ease-in-out;
+}
+.card-info-2{
+  position: absolute;
+  left: 40%;
+  bottom:0;
+  background-color: #764F90;
+  animation: cardInfoMovement2 2s ease-in-out;
+}
+.card-info-3{
+  position: absolute;
+  right: 10%;
+  top:0;
+  background-color: #2F4858;
+  animation: cardInfoMovement3 3s ease-in-out;
+}
+
+@keyframes cardInfoMovement1 {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+@keyframes cardInfoMovement2 {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+@keyframes cardInfoMovement3 {
+  0% {
+    right: -40%;
+  }
+  100% {
+    right: 10%;
   }
 }

@@ -4,5 +4,12 @@ from django.shortcuts import render
 
 
 def index(request):
-    print('Hello World')
-    return render(request, 'contest_app/index.html')
+    return render(request, 'contest_app/home.html')
+
+
+def about(request):
+    return render(request, 'contest_app/about.html')
+
+
+def register(request):
+    return render(request, 'contest_app/register.html')

@@ -3,29 +3,18 @@
     {% load static %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>International!</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'contest_app/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'contest_app/css/easter.css' %}" />
+    <link rel="stylesheet" href="{% static 'contest_app/css/index.css' %}" />
   </head>
   <body>
-    <h1>Welcome to the</h1>
-    <div class="circle">
-      <img
-        class="logo"
-        src="https://media1.giphy.com/media/bj09BK2BzLLQk/200w.gif?cid=82a1493bup74ordbfg507aimyh3oua1mk9297hoyb4kxisr8&rid=200w.gif&ct=g"
-        alt=""
-      />
-      <div class="text">
-        <p>Web - Developers - Contest -</p>
-      </div>
-    </div>
-    <h4>...the most broken contest in the world</h4>
-
+    {% block content %} {% endblock %}
     <img
       class="decor decor-1"
       src="{% static 'contest_app/icons8-tomato-66.png' %}"
@@ -66,10 +55,6 @@
       src="{% static 'contest_app/icons8-eggplant-66.png' %}"
       alt=""
     />
-
-    <button class="btn btn-warning text-white start-button">
-      What are you waiting for?
-    </button>
 
     <script>
       const text = document.querySelector(".text p");
