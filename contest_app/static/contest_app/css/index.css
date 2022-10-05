@@ -7,18 +7,16 @@ body{
     rgba(232, 92, 2, 1) 100%
   );
   z-index: -2;
+  color: white;
+  font-family: monospace;
 }
 
 .content {
-  
-  font-family: monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   justify-content: space-around;
-  color: white;
-  overflow: hidden;
   z-index:1;
 }
 

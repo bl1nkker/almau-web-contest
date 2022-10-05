@@ -44,3 +44,7 @@ def register(request):
                 name=second_fullname, team=ContestTeam.objects.get(name=team_name), phone=second_phone, is_leader=False)
         return render(request, 'contest_app/timer.html', context={'team_name': team_name})
     return render(request, 'contest_app/register.html')
+
+
+def timer(request):
+    return render(request, 'contest_app/timer.html')
