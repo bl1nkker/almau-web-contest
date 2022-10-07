@@ -1,0 +1,29 @@
+.certificate{
+    height: 80vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate__header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2F4858;
+    color: white
+}
+
+.certificate__body{
+    padding: 2rem;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+    text-align: center;
+}

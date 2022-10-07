@@ -48,3 +48,7 @@ def register(request):
 
 def timer(request):
     return render(request, 'contest_app/timer.html')
+
+
+def certificate(request):
+    return render(request, 'contest_app/certificate.html')
