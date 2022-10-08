@@ -7,6 +7,9 @@ class ContestTeam(models.Model):
     name = models.CharField(max_length=100)
     course = models.CharField(max_length=100, default='0')
 
+    def __str__(self) -> str:
+        return f'{self.name} - {self.course}'
+
 
 class ContestParticipant(models.Model):
     name = models.CharField(max_length=100)
@@ -14,6 +17,9 @@ class ContestParticipant(models.Model):
     phone = models.CharField(max_length=100, default='000-000-0000')
     is_active = models.BooleanField(default=True)
     is_leader = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return f'{"*" if self.is_leader else ""}{self.name} - {self.team.name}'
 
 
 class ContestTask(models.Model):
