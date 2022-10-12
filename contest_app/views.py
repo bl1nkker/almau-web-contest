@@ -52,3 +52,11 @@ def timer(request):
 
 def certificate(request):
     return render(request, 'contest_app/certificate.html')
+
+
+def task_1(request):
+    return render(request, 'contest_app/task_1.html')
+
+
+def task_2(request):
+    return render(request, 'contest_app/task_2.html')

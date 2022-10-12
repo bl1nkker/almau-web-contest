@@ -1,0 +1,47 @@
+{% extends 'contest_app/index.html' %}
+{% block content %}
+{% load static %}
+<div class='content'>
+    <h2>Task 2: Social Media Platform for Gamers</h2>
+    <div class='d-flex flex-row justify-content-around'>
+        <div class='requirements-left d-flex flex-column justify-content-between'>
+            <h3>Requirements:</h3>
+            <section>
+                <p>- Left Navigation bar with 10+ links</p>
+                <p>- Top navigation bar with search field and user avatar</p>
+                <p>- Main content with content (you can choose it on your own)</p>
+                <p>- Project must include logo</p>
+                <p>- Project must be adaptive</p>
+            </section>
+            <span></span>
+    
+        </div>
+        <div class='example-right d-flex flex-column justify-content-between'>
+            <h3>Examples (something similar):</h3>
+            <div class='images d-flex flex-column justify-content-around'>
+            <div class='image-container d-flex justify-content-start'>
+                    <img
+                  class="example image-1"
+                  src="{% static 'contest_app/task_images/task_1-1.jpg' %}"
+                  alt=""
+                />
+                </div>
+            <div class='image-container d-flex justify-content-end'>
+                <img
+              class="example image-1"
+              src="{% static 'contest_app/task_images/task_1-2.jpg' %}"
+              alt=""
+            />
+                </div>
+            <div class='image-container d-flex justify-content-start'>
+                <img
+                class="example image-1"
+                src="{% static 'contest_app/task_images/task_1-3.jpg' %}"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

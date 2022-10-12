@@ -1,0 +1,61 @@
+{% extends 'contest_app/index.html' %}
+{% block content %}
+{% load static %}
+<div class='content'>
+    <h2>Task 1: Ecommerce Landing Web Design</h2>
+    <div class='d-flex flex-row-reverse justify-content-around'>
+        <div class='requirements-left d-flex flex-column justify-content-between'>
+            <h3>Requirements:</h3>
+            <section>
+                {% comment %} - Top Navigation bar
+- Row with the product cards
+    - Each product card MUST have product image + product name
+- Column with the product cards
+    - Each product card MUST have product image, product name and product description
+- Footer
+- Project must include logo
+- Project must be adaptive {% endcomment %}
+                <p>- Top Navigation bar</p>
+                <p>- Row with the product cards</p>
+                <p>* Each product card MUST have product image + product name</p>
+                <p>- Column with the product cards</p>
+                <p>* Each product card MUST have product image, product name and product description</p>
+                <p>- Footer</p>
+                <p>- Project must include logo</p>
+                <p>- Project must be adaptive</p>
+            </section>
+            <span></span>
+    
+        </div>
+        <div class='example-right d-flex flex-column justify-content-between'>
+            <h3>Examples (something similar):</h3>
+            <div class='images d-flex flex-column justify-content-around'>
+            <div class='image-container d-flex justify-content-between'>
+                    <img
+                  class="example image-1"
+                  src="{% static 'contest_app/task_images/task_2-1.jpg' %}"
+                  alt=""
+                />
+                <img
+              class="example image-1"
+              src="{% static 'contest_app/task_images/task_2-2.jpg' %}"
+              alt=""
+            />
+                </div>
+            <div class='image-container d-flex justify-content-between'>
+                <img
+                class="example image-1"
+                src="{% static 'contest_app/task_images/task_2-3.jpg' %}"
+                alt=""
+                />
+                <img
+                class="example image-1"
+                src="{% static 'contest_app/task_images/task_2-4.jpg' %}"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

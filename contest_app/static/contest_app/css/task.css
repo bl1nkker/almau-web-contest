@@ -1,0 +1,35 @@
+.requirements-left{
+    padding: 2em;
+    background-color: #764F90;
+    height: 80vh;
+    width: 40%;
+    border-radius: 10%;
+}
+
+.task{
+    flex-direction: row;
+    align-items: center;
+}
+
+.example-right{
+    padding: 2em;
+    background-color: #E13856;
+    height: 80vh;
+    width: 40%;
+    border-radius: 10%;
+}
+
+.example{
+    width: 40%;
+    border-radius: 10%;
+    border: 3px white solid;
+    transition: 1s;
+}
+
+.example:hover{
+    transform: scale(2);
+}
+
+.images{
+    flex:1
+}
