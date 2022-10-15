@@ -1,11 +1,8 @@
 {% extends 'contest_app/index.html' %}
 {% block content %}
 <div class='content'>
-    {% if team_name %}
-    <h1>Welcome, {{team_name}}!</h1>
-    {% else %}
     <h1>It's coming!</h1>
-    {% endif %}
+    
     <!-- Display the countdown timer in an element -->
     <div class='border border-white border-5 rounded p-3' style='background-color:#2F4858; transition: 1s;'>
         <p class='timer' id="demo"></p>
@@ -15,19 +12,9 @@
 
 </div>
 <script>
-
-    const addAnchorToTheDom = () => {
-        // <a href='/register' class="btn btn-warning text-white next-button">Yeeah i like it!</a>
-        const anchor = document.createElement('a');
-        anchor.href = '/task_2';
-        anchor.classList.add('btn', 'btn-info', 'text-white', 'next-button');
-        anchor.innerText = 'TO THE FIRST TASK!';
-        document.querySelector('.content').appendChild(anchor);
-
-    }
     // Set the date we're counting down to
     // It probably may be Friday
-    var countDownDate = new Date("Oct 15, 2022 18:30:00").getTime();
+    var countDownDate = new Date("Oct 15, 2022 21:30:00").getTime();
     // Update the count down every 1 second
     var x = setInterval(function() {
 
@@ -50,8 +37,7 @@
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "The battle begins!";
-        addAnchorToTheDom();
+        document.getElementById("demo").innerHTML = "Deadline is over";
     }
     }, 1000);
 </script>

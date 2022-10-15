@@ -23,6 +23,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('register/', views.register, name='register'),
     path('timer/', views.timer, name='timer'),
+    path('task_deadline/', views.task_deadline, name='task_deadline'),
     path('task_1/', views.task_1, name='task_1'),
     path('task_2/', views.task_2, name='task_2'),
     path('certificate/', views.certificate, name='certificate'),

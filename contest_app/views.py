@@ -50,6 +50,10 @@ def timer(request):
     return render(request, 'contest_app/timer.html')
 
 
+def task_deadline(request):
+    return render(request, 'contest_app/task_deadline.html')
+
+
 def certificate(request):
     return render(request, 'contest_app/certificate.html')
 
